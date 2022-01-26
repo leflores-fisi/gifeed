@@ -1,0 +1,49 @@
+:root {
+  --header-height: 65px;
+}
+
+.App {
+  text-align: center;
+}
+.App-header {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  height: var(--header-height);
+  font-size: 20px;
+  padding: 15px;
+  font-size: calc(10px + 2vmin);
+  background-color: #f8fffc;
+  box-shadow: rgba(17, 12, 46, 0.05) 0px 10px 22px 0px;
+  color: rgb(0, 0, 0);
+}
+.App-header__logo {
+  font-size: 20px;
+}
+
+.App-header__posting {
+
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+}
+.App-header__posting input {
+
+  background-color: rgb(233, 245, 241);
+  height: calc(100% - 10px);
+  width: calc(100% - 100px);
+}
+.App-header__posting button {
+  padding: 5px;
+  margin-left: 10px;
+  height: calc(100% - 10px);
+}
+
+.search-results {
+  margin: 10px 40px;
+}

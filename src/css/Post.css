@@ -1,0 +1,70 @@
+:root {
+    --card-min-width: 250px;
+    --card-max-width: 300px;
+    --card-min-height: 250px;
+    --card-max-height: 300px;
+
+    --profile-size: 40px;
+}
+/* Post card */
+.post {
+    display: inline-flex;
+
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-width: var(--card-min-width);
+    max-width: var(--card-max-width);
+
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 10px;
+}
+/* Gif */
+.post__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: var(--card-max-width);
+    min-width: var(--card-min-width);
+}
+.post__content img {
+    border-radius: 10px 10px 0 0;
+    min-width: 100%;
+    max-width: var(--card-max-width);
+    max-height: var(--card-min-width);
+}
+
+/* Header */
+.post__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    min-width: var(--card-min-width);
+    max-width: var(--card-max-width);
+    width: 100%;
+    padding: 10px 0 5px 15px;
+}
+.post__footer picture {
+    background-color: rgb(240, 248, 243);
+    height: var(--profile-size); width: var(--profile-size);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.post__footer .post-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+.post__footer .post-info__title {
+    max-width: calc(var(--card-max-width) - var(--profile-size) - 10px);
+}
+.user-profile {
+    height: 40px;
+    border-radius: 50%;
+}
