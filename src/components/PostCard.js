@@ -9,13 +9,16 @@ function PostCard ({title, id, url}) {
 
 	useEffect(function () {
 		generateProfile().then(p => setUser(p))
+		
 	}, []);
 
 	return (
 		<div className="post">
+
 			<div className="post__content">
 				<img alt={title} src={url} id={id} key={id}/>
 			</div>
+
 			<footer className="post__footer">
 				<div className="post-info">
 					<h4 className="post-info__title">{title.toUpperCase()}</h4>

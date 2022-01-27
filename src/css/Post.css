@@ -1,6 +1,6 @@
 :root {
     --card-min-width: 250px;
-    --card-max-width: 300px;
+    --card-max-width: 250px;
     --card-min-height: 250px;
     --card-max-height: 300px;
 
@@ -8,17 +8,20 @@
 }
 /* Post card */
 .post {
-    display: inline-flex;
+    display: flex;
 
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     min-width: var(--card-min-width);
     max-width: var(--card-max-width);
 
-    margin: 10px;
+    position: absolute;
+
+    /* margin: 10px; managed by css grid -> gap*/
+    margin: 7px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     border-radius: 10px;
 }
