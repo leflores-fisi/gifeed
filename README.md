@@ -3,6 +3,6 @@
 ![](https://github.com/leflores-fisi/gifeed/blob/main/banner.jpg)
 
 API's used:
-- https://api.giphy.com
-- https://random-data-api.com
-- https://masonry.desandro.com
+- Gifs: https://api.giphy.com
+- Random users: https://random-data-api.com
+- Grid: https://masonry.desandro.com
