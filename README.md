@@ -1,5 +1,7 @@
 # Gifs searcher
 
+create-react-app dev build proyect
+
 ![](https://github.com/leflores-fisi/gifeed/blob/main/banner.jpg)
 
 API's used:
